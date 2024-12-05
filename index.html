@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //     var arr = [1,2,3,4]
+    //   var result  = arr.filter((item,index)=>arr.indexOf(item) !== index)
+    //          console.log(result);
+             
+    </script>  
+<script>
+//     var arr = [1,2,3,2,1,3,1,5]
+//     var count=0
+//     var max=0; 
+//     var res = null
+//     var pcount=0  
+//     for(var i=0;i<arr.length;i++)
+// {
+//     for(var j=1;j<arr.length;j++)
+// { 
+//     if(arr[i]==arr[j])
+// {   
+//     count++
+//     if(count>pcount)
+// {
+//     pcount = count + pcount;
+//     max = arr[i]
+
+// }
+// }
+// }
+// }
+//console.log(max);
+
+// var arr =[1,2,3,4,5,2,3,1,3,3,4]
+// {
+//     var res = arr.filter((array,index)=>arr.indexOf(array) != index)
+//     console.log(res);
+    
+// }
+const farmers = [
+  { name: "John", village: "A", crop: "Wheat", income: 5000000 },
+  { name: "Alice", village: "B", crop: "Rice", income: 7000000 },
+  { name: "Bob", village: "C", crop: "Wheat", income: 8000000 },
+  { name: "Eve", village: "D", crop: "Barley", income: 4000000 },
+  { name: "Charlie", village: "E", crop: "Wheat", income: 6500000 },
+  { name: "David", village: "F", crop: "Rice", income: 3000000 },
+  { name: "Sophia", village: "G", crop: "Wheat", income: 9000000 },
+  { name: "Liam", village: "H", crop: "Corn", income: 3500000 },
+  { name: "Olivia", village: "I", crop: "Wheat", income: 4500000 },
+  { name: "Mason", village: "J", crop: "Rice", income: 5500000 }
+];
+// print farmer details 
+
+ farmers.forEach((ele)=>
+{
+    return console.log(ele.name,ele.village,ele.crop,ele.income); 
+}
+)
+
+// print crop wheat wise farmers details 
+var newCrop = farmers.filter((item,index)=>
+{
+        if(item.crop == "Wheat")
+        return item   
+})
+
+//above 6lac income farmers details  
+var max  = farmers.filter((item,index)=>
+{
+    if(item.income>6000000)
+{
+    return item
+}
+})
+
+console.log(max);
+console.log(newCrop);
+
+
+</script>
+
+</script>
+</body>
+</html>
